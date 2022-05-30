@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+/****** elements *********/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.li-horizontal {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.links {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.links:hover {
+    font-weight: bold;
+}
+
+.button-black {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+  
+.button-black:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.responsive {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.small-circle {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.text-center {
+    margin: 20px auto;
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .text-center {
+        width: 100%;
+    }
+}
+
+/****** color *********/
+
+.bg-color-gradient {
+    background-image: linear-gradient(to bottom, #00b7c2, #ffffff);
+    background-size: cover;
+}
+
+.bg-color-blue {
+    background-color: #00b7c2;
+}
+
+.bg-color-yellow {
+    background-color: #fdcb9e;
+}
+
+/****** nav *********/
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav > ul {
+    padding: 15px;
+}
+
+nav > ul > li:first-child {
+    flex: 1;
+}
+
+.toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {  
+    .logo {
+        order: 1;
+    }
+
+    .toggle {
+        display: inline;
+        order: 2;
+    }
+
+    .menu {
+        order: 3;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .none .menu {
+        display: none;
+    }
+}
+
+/****** jumbotron *********/
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+}
+
+/****** main *********/
+
+#gejala, #pencegahan, #penanggulangan {
+    font-size: 18px;
+    padding: 40px;
+    text-align: center;
+}
+
+/****** pencegahan *********/
+
+.box {
+    height: 500px;
+    padding: 10%;
+    text-align: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .order-3 {
+        order: 3;
+    }
+    
+    .order-4 {
+        order: 4;
+    }
+
+    .order-5 {
+        order: 5;
+    }
+
+    .order-6 {
+        order: 6;
+    }
+}
+
+/****** about *********/
+
+aside {
+    text-align: center;
+    padding: 60px;
+}
+
+#profile {
+    width: 30%;
+}
+
+/****** footer *********/
+
+#others, #summary {
+    padding: 30px;
+}
+
+#others > a {
+    display: inline-block;
+}
+
+.footer-column {
+    line-height: 2;
+}
+
+.footer-column > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-column {
+        width: 100%;
+        height: auto;
+    }
+}
